@@ -74,7 +74,7 @@ return {
 					},
 					{
 						materials = { "vehicle/plane/wilga/rumpf1.mtl", },
-						mesh = "vehicle/plane/wilga/wilga_rad_lod0.msh",
+						mesh = "vehicle/plane/wilga/wilga_rad2_lod0.msh",
 						name = "wilga_rad_rechts",
 						transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 1.0128583908081, -1.3918029069901, 0.21364086866379, 1, },
 					},
@@ -175,7 +175,7 @@ return {
 					},
 					{
 						materials = { "vehicle/plane/wilga/rumpf1.mtl", },
-						mesh = "vehicle/plane/wilga/wilga_rad_lod1.msh",
+						mesh = "vehicle/plane/wilga/wilga_rad2_lod1.msh",
 						name = "wilga_rad_rechts",
 						transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 1.0128583908081, -1.3918029069901, 0.21364086866379, 1, },
 					},
@@ -235,7 +235,7 @@ return {
 						ids = { 8, },
 						maxAngle = -30,
 					},
-					axles = { "vehicle/plane/wilga/wilga_rad_lod0.msh", },
+					axles = { "vehicle/plane/wilga/wilga_rad_lod0.msh", "vehicle/plane/wilga/wilga_rad2_lod0.msh", },
 					beaconLights = { 16 },
 					elevator = {
 						ids = { 2, },
@@ -265,7 +265,7 @@ return {
 						ids = { 7, },
 						maxAngle = -30,
 					},
-					axles = { "vehicle/plane/wilga/wilga_rad_lod1.msh", },
+					axles = { "vehicle/plane/wilga/wilga_rad_lod1.msh", "vehicle/plane/wilga/wilga_rad2_lod1.msh", },
 					beaconLights = {  },
 					elevator = {
 						ids = { 2, },
