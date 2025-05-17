@@ -355,7 +355,7 @@ return {
 		},
 		description = {
 			name = _("wilga_1_name"),
-			description = _("wilga_1_desc"),
+			description = _("wilga_desc"),
 		},
 		emission = {
 			idleEmission = -1,
@@ -401,7 +401,7 @@ return {
 			loadSpeed = 1,
 			multipleUnitOnly = false,
 			reversible = false,
-			groupFileName = "vehicle/plane/menu_wilga.mdl",
+			groupFileName = "vehicle/plane/wilga/menu_wilga.mdl",
 		},
 	},
 	version = 1,
