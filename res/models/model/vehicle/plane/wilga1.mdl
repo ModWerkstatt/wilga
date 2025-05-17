@@ -336,7 +336,7 @@ return {
 				},
 			},
 			engines = { },
-			idleThrust = 10,
+			idleThrust = 7,
 			maxPayload = 405,
 			maxTakeOffWeight = 1230,
 			maxThrust = 1900,
