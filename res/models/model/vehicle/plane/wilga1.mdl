@@ -235,7 +235,7 @@ return {
 						ids = { 8, },
 						maxAngle = -30,
 					},
-					axles = { "vehicle/plane/wilga/wilga_rad_links_lod0.msh", },
+					axles = { "vehicle/plane/wilga/wilga_rad_lod0.msh", },
 					beaconLights = { 16 },
 					elevator = {
 						ids = { 2, },
@@ -265,7 +265,7 @@ return {
 						ids = { 7, },
 						maxAngle = -30,
 					},
-					axles = { "vehicle/plane/wilga/wilga_rad_links_lod1.msh", },
+					axles = { "vehicle/plane/wilga/wilga_rad_lod1.msh", },
 					beaconLights = {  },
 					elevator = {
 						ids = { 2, },
@@ -330,7 +330,7 @@ return {
 		},
 		soundConfig = {
 			soundSet = {
-				name = "aircraft_prop_old",
+				name = "aircraft_prop_modern",
 			},
 		},
 		transportVehicle = {
