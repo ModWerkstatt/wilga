@@ -339,7 +339,7 @@ return {
 			idleThrust = 7,
 			maxPayload = 405,
 			maxTakeOffWeight = 1230,
-			maxThrust = 1900,
+			maxThrust = 2500,
 			timeToFullThrust = 2,
 			topSpeed = 52.777777,
 			type = "SMALL",
