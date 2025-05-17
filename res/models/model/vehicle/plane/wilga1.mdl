@@ -286,6 +286,36 @@ return {
 					strobeLights = {  },
 					wheels = { "vehicle/plane/wilga/wilga_sporn_lod1.msh", },
 				},
+				{
+					aileronLeft = {
+						ids = { },
+						maxAngle = 30,
+					},
+					aileronRight = {
+						ids = { },
+						maxAngle = -30,
+					},
+					axles = { "vehicle/plane/wilga/wilga_rad_lod2.msh", "vehicle/plane/wilga/wilga_rad2_lod2.msh", },
+					beaconLights = {  },
+					elevator = {
+						ids = { },
+						maxAngle = -18,
+					},
+					flaps = {
+						ids = { },
+						maxAngle = -40,
+					},
+					landingLight = { },
+					props = { },
+					propsB = { },
+					rudder = {
+						ids = { },
+						maxAngle = 30,
+					},
+					steeringParts = { },
+					strobeLights = {  },
+					wheels = { "vehicle/plane/wilga/wilga_sporn_lod2.msh", },
+				},
 			},
 			engines = { },
 			idleThrust = 3,
