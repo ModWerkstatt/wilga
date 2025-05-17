@@ -49,7 +49,7 @@ return {
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.0401067733765, 0, 1.5534424781799, 1, },
 					},
 					{
-						materials = { "vehicle/plane/wilga/propeller.mtl", },
+						materials = { "vehicle/plane/wilga/propeller.mtl", "vehicle/plane/wilga/rumpf1.mtl", },
 						mesh = "vehicle/plane/wilga/wilga_propwash_lod0.msh",
 						name = "wilga_prop",
 						transf = { 1, 0, 0, 0, 0, 0, 1, 0, 0, -1, 0, 0, 2.0401067733765, 0, 1.5534424781799, 1, },
@@ -74,7 +74,7 @@ return {
 					},
 					{
 						materials = { "vehicle/plane/wilga/rumpf1.mtl", },
-						mesh = "vehicle/plane/wilga/wilga_rad2_lod0.msh",
+						mesh = "vehicle/plane/wilga/wilga_rad_lod0.msh",
 						name = "wilga_rad_rechts",
 						transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 1.0128583908081, -1.3918029069901, 0.21364086866379, 1, },
 					},
@@ -150,7 +150,7 @@ return {
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.0401067733765, 0, 1.5534424781799, 1, },
 					},
 					{
-						materials = { "vehicle/plane/wilga/propeller.mtl", },
+						materials = { "vehicle/plane/wilga/propeller.mtl", "vehicle/plane/wilga/rumpf1.mtl", },
 						mesh = "vehicle/plane/wilga/wilga_propwash_lod0.msh",
 						name = "wilga_prop",
 						transf = { 1, 0, 0, 0, 0, 0, 1, 0, 0, -1, 0, 0, 2.0401067733765, 0, 1.5534424781799, 1, },
@@ -175,7 +175,7 @@ return {
 					},
 					{
 						materials = { "vehicle/plane/wilga/rumpf1.mtl", },
-						mesh = "vehicle/plane/wilga/wilga_rad2_lod1.msh",
+						mesh = "vehicle/plane/wilga/wilga_rad_lod1.msh",
 						name = "wilga_rad_rechts",
 						transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 1.0128583908081, -1.3918029069901, 0.21364086866379, 1, },
 					},
@@ -222,7 +222,7 @@ return {
 					},
 					{
 						materials = { "vehicle/plane/wilga/rumpf1.mtl", },
-						mesh = "vehicle/plane/wilga/wilga_rad2_lod2.msh",
+						mesh = "vehicle/plane/wilga/wilga_rad_lod2.msh",
 						name = "wilga_rad_rechts",
 						transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 1.0128583908081, -1.3918029069901, 0.21364086866379, 1, },
 					},
@@ -247,13 +247,13 @@ return {
 				{
 					aileronLeft = {
 						ids = { 7, },
-						maxAngle = 30,
+						maxAngle = -30,
 					},
 					aileronRight = {
 						ids = { 8, },
 						maxAngle = -30,
 					},
-					axles = { "vehicle/plane/wilga/wilga_rad_lod0.msh", "vehicle/plane/wilga/wilga_rad2_lod0.msh", },
+					axles = { "vehicle/plane/wilga/wilga_rad_lod0.msh" },
 					beaconLights = { 16 },
 					elevator = {
 						ids = { 2, },
@@ -270,20 +270,20 @@ return {
 						ids = { 12, },
 						maxAngle = 30,
 					},
-					steeringParts = { },
+					steeringParts = { 12, },
 					strobeLights = { 14, },
 					wheels = { "vehicle/plane/wilga/wilga_sporn_lod0.msh", },
 				},
 				{
 					aileronLeft = {
 						ids = { 6, },
-						maxAngle = 30,
+						maxAngle = -30,
 					},
 					aileronRight = {
 						ids = { 7, },
 						maxAngle = -30,
 					},
-					axles = { "vehicle/plane/wilga/wilga_rad_lod1.msh", "vehicle/plane/wilga/wilga_rad2_lod1.msh", },
+					axles = { "vehicle/plane/wilga/wilga_rad_lod1.msh" },
 					beaconLights = {  },
 					elevator = {
 						ids = { 2, },
@@ -307,13 +307,13 @@ return {
 				{
 					aileronLeft = {
 						ids = { },
-						maxAngle = 30,
+						maxAngle = -30,
 					},
 					aileronRight = {
 						ids = { },
 						maxAngle = -30,
 					},
-					axles = { "vehicle/plane/wilga/wilga_rad_lod2.msh", "vehicle/plane/wilga/wilga_rad2_lod2.msh", },
+					axles = { "vehicle/plane/wilga/wilga_rad_lod2.msh" },
 					beaconLights = {  },
 					elevator = {
 						ids = { },
@@ -354,8 +354,8 @@ return {
 			price = -1,
 		},
 		description = {
-			description = _("wilga_1_desc"),
 			name = _("wilga_1_name"),
+			description = _("wilga_1_desc"),
 		},
 		emission = {
 			idleEmission = -1,
