@@ -1,0 +1,225 @@
+local vec3 = require "vec3"
+local transf = require "transf"
+
+function data()
+return {
+	boundingInfo = {
+		bbMax = { 2.10, 5.6287178993225, 3.7708418369293, },
+		bbMin = { -5.7751371383667, -5.6287174224854, -0.030275613069534, },
+	},
+	collider = {
+		params = {
+			halfExtents = { 4.8790550231934, 5.6287174224854, 1.9005587100983, },
+		},
+		transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+		type = "BOX",
+	},
+	lods = {
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/plane/wilga/fenster.mtl", },
+						mesh = "vehicle/plane/wilga/wilga_fenster_lod0.msh",
+						name = "wilga_fenster",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/wilga/rumpf6.mtl", },
+						mesh = "vehicle/plane/wilga/wilga_hohe_lod0.msh",
+						name = "wilga_hohe",
+                        transf = transf.rotZYXTransl(transf.degToRad(-90, 0, 0) , vec3.new( -5.1838212013245, 0, 1.5795394182205 )),
+					},
+					{
+						materials = { "vehicle/plane/wilga/rumpf6.mtl", },
+						mesh = "vehicle/plane/wilga/wilga_innen_lod0.msh",
+						name = "wilga_innen",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/wilga/rumpf6.mtl", },
+						mesh = "vehicle/plane/wilga/wilga_klappen_lod0.msh",
+						name = "wilga_klappen",
+                        transf = transf.rotZYXTransl(transf.degToRad(-90, 0, 0) , vec3.new( -0.55261421203613, 0, 2.5499045848846 )),
+					},
+					{
+						materials = { "vehicle/plane/wilga/rumpf6.mtl", },
+						mesh = "vehicle/plane/wilga/wilga_prop_lod0.msh",
+						name = "wilga_prop",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.0401067733765, 0, 1.5534424781799, 1, },
+					},
+					{
+						materials = { "vehicle/plane/wilga/rumpf6.mtl", },
+						mesh = "vehicle/plane/wilga/wilga_quer_links_lod0.msh",
+						name = "wilga_quer_links",
+                        transf = transf.rotZYXTransl(transf.degToRad(-90, 0, 0) , vec3.new( -0.54957294464111, 4.2635431289673, 2.5575459003448 )),
+					},
+					{
+						materials = { "vehicle/plane/wilga/rumpf6.mtl", },
+						mesh = "vehicle/plane/wilga/wilga_quer_rechts_lod0.msh",
+						name = "wilga_quer_rechts",
+                        transf = transf.rotZYXTransl(transf.degToRad(-90, 0, 0) , vec3.new( -0.54957020282745, -4.2635431289673, 2.5575459003448 )),
+					},
+					{
+						materials = { "vehicle/plane/wilga/rumpf6.mtl", },
+						mesh = "vehicle/plane/wilga/wilga_rad_lod0.msh",
+						name = "wilga_rad_links",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.0128583908081, 1.3918033838272, 0.21364086866379, 1, },
+					},
+					{
+						materials = { "vehicle/plane/wilga/rumpf6.mtl", },
+						mesh = "vehicle/plane/wilga/wilga_rad_lod0.msh",
+						name = "wilga_rad_rechts",
+						transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 1.0128583908081, -1.3918029069901, 0.21364086866379, 1, },
+					},
+					{
+						materials = { "vehicle/plane/wilga/rumpf6.mtl", },
+						mesh = "vehicle/plane/wilga/wilga_rumpf_lod0.msh",
+						name = "wilga_rumpf",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -5.6843418860808e-14, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/wilga/rumpf6.mtl", },
+						mesh = "vehicle/plane/wilga/wilga_seite_lod0.msh",
+						name = "wilga_seite",
+                        transf = transf.rotZYXTransl(transf.degToRad(0, -18.2, 0) , vec3.new( -4.9780592918396, 0, 2.4124598503113 )),
+					},
+					{
+						materials = { "vehicle/plane/wilga/rumpf6.mtl", },
+						mesh = "vehicle/plane/wilga/wilga_sporn_lod0.msh",
+						name = "wilga_sporn",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.5774502754211, 0, 0.87080091238022, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 0,
+			visibleTo = 150,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/plane/wilga/fenster.mtl", },
+						mesh = "vehicle/plane/wilga/wilga_fenster_lod0.msh",
+						name = "wilga_fenster",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/wilga/rumpf6.mtl", },
+						mesh = "vehicle/plane/wilga/wilga_hohe_lod1.msh",
+						name = "wilga_hohe",
+                        transf = transf.rotZYXTransl(transf.degToRad(-90, 0, 0) , vec3.new( -5.1838212013245, 0, 1.5795394182205 )),
+					},
+					{
+						materials = { "vehicle/plane/wilga/rumpf6.mtl", },
+						mesh = "vehicle/plane/wilga/wilga_klappen_lod1.msh",
+						name = "wilga_klappen",
+                        transf = transf.rotZYXTransl(transf.degToRad(-90, 0, 0) , vec3.new( -0.55261421203613, 0, 2.5499045848846 )),
+					},
+					{
+						materials = { "vehicle/plane/wilga/rumpf6.mtl", },
+						mesh = "vehicle/plane/wilga/wilga_prop_lod1.msh",
+						name = "wilga_prop",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.0401067733765, 0, 1.5534424781799, 1, },
+					},
+					{
+						materials = { "vehicle/plane/wilga/rumpf6.mtl", },
+						mesh = "vehicle/plane/wilga/wilga_quer_links_lod1.msh",
+						name = "wilga_quer_links",
+                        transf = transf.rotZYXTransl(transf.degToRad(-90, 0, 0) , vec3.new( -0.54957294464111, 4.2635431289673, 2.5575459003448 )),
+					},
+					{
+						materials = { "vehicle/plane/wilga/rumpf6.mtl", },
+						mesh = "vehicle/plane/wilga/wilga_quer_rechts_lod1.msh",
+						name = "wilga_quer_rechts",
+                        transf = transf.rotZYXTransl(transf.degToRad(-90, 0, 0) , vec3.new( -0.54957020282745, -4.2635431289673, 2.5575459003448 )),
+					},
+					{
+						materials = { "vehicle/plane/wilga/rumpf6.mtl", },
+						mesh = "vehicle/plane/wilga/wilga_rad_lod1.msh",
+						name = "wilga_rad_links",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.0128583908081, 1.3918033838272, 0.21364086866379, 1, },
+					},
+					{
+						materials = { "vehicle/plane/wilga/rumpf6.mtl", },
+						mesh = "vehicle/plane/wilga/wilga_rad_lod1.msh",
+						name = "wilga_rad_rechts",
+						transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 1.0128583908081, -1.3918029069901, 0.21364086866379, 1, },
+					},
+					{
+						materials = { "vehicle/plane/wilga/rumpf6.mtl", },
+						mesh = "vehicle/plane/wilga/wilga_rumpf_lod1.msh",
+						name = "wilga_rumpf",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -5.6843418860808e-14, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/wilga/rumpf6.mtl", },
+						mesh = "vehicle/plane/wilga/wilga_seite_lod1.msh",
+						name = "wilga_seite",
+                        transf = transf.rotZYXTransl(transf.degToRad(0, -18.2, 0) , vec3.new( -4.9780592918396, 0, 2.4124598503113 )),
+					},
+					{
+						materials = { "vehicle/plane/wilga/rumpf6.mtl", },
+						mesh = "vehicle/plane/wilga/wilga_sporn_lod1.msh",
+						name = "wilga_sporn",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.5774502754211, 0, 0.87080091238022, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 150,
+			visibleTo = 500,
+		},
+		{
+			node = {
+				children = {
+					{
+						materials = { "vehicle/plane/wilga/rumpf6.mtl", },
+						mesh = "vehicle/plane/wilga/wilga_rumpf_lod2.msh",
+						name = "wilga_rumpf",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, -5.6843418860808e-14, 0, 1, },
+					},
+					{
+						materials = { "vehicle/plane/wilga/rumpf6.mtl", },
+						mesh = "vehicle/plane/wilga/wilga_rad_lod2.msh",
+						name = "wilga_rad_links",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.0128583908081, 1.3918033838272, 0.21364086866379, 1, },
+					},
+					{
+						materials = { "vehicle/plane/wilga/rumpf6.mtl", },
+						mesh = "vehicle/plane/wilga/wilga_rad_lod2.msh",
+						name = "wilga_rad_rechts",
+						transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 1.0128583908081, -1.3918029069901, 0.21364086866379, 1, },
+					},
+					{
+						materials = { "vehicle/plane/wilga/rumpf6.mtl", },
+						mesh = "vehicle/plane/wilga/wilga_sporn_lod2.msh",
+						name = "wilga_sporn",
+						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.5774502754211, 0, 0.87080091238022, 1, },
+					},
+				},
+				name = "RootNode",
+				transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
+			},
+			static = false,
+			visibleFrom = 500,
+			visibleTo = 1000,
+		},
+	},
+	metadata = {
+		availability = {
+			yearFrom = 0,
+			yearTo = 0,
+		},
+		cost = {
+			price = -1,
+		},
+	},
+	version = 1,
+}
+end
