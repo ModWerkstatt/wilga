@@ -347,7 +347,7 @@ return {
 			wingArea = 15.5,
 		},
 		availability = {
-			yearFrom = 1962,
+			yearFrom = 1967,
 			yearTo = 1990,
 		},
 		cost = {

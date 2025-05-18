@@ -2,11 +2,11 @@ local vec3 = require "vec3"
 local transf = require "transf"
 
 function data()
-return { 
+return {
 	type = "ASSET_DEFAULT",
 	description = {
-		name = _("Wilga Asset Set"),			
-		description = _("Wilga PZL 104 als Asset")
+		name = _("wilga_assets_name"),
+		description = _("wilga_assets_desc")
 	},
 	availability = {},
 	buildMode = "MULTI",
@@ -17,49 +17,49 @@ return {
 	params = {
 		{
 			key = "wilga",
-			name = _("Wilga PZL 104 1962"),
+			name = _("wilga_assets_key_name"),
 			uiType = "ICON_BUTTON",
-			values = { 	"ui/construction/asset/wilga/.tga",
-						"ui/construction/asset/wilga/.tga",
-						"ui/construction/asset/wilga/.tga",
-						"ui/construction/asset/wilga/.tga",
-						"ui/construction/asset/wilga/.tga",
-						"ui/construction/asset/wilga/.tga",					
+			values = { 	"ui/construction/asset/wilga/wilga1.tga",
+						"ui/construction/asset/wilga/wilga2.tga",
+						"ui/construction/asset/wilga/wilga3.tga",
+						"ui/construction/asset/wilga/wilga4.tga",
+						"ui/construction/asset/wilga/wilga5.tga",
+						"ui/construction/asset/wilga/wilga6.tga",
 					},
-			tooltip = _("Wilga PZL 104 als Asset"),
+			tooltip = _("wilga_assets_desc"),
 		},
 	},
 	updateFn = function(params)
 		local result = { }
 		result.models = {  }
 		local height = 0
-		
-		
+
+
 		if params.wilga == 0 then
 		result.models[#result.models+1] = {id = "asset/wilga/wilga1.mdl", transf = transf.rotZYXTransl(transf.degToRad(0, -6, 0) , vec3.new( 0, 0, -0.10 )), }
 		end
-		
+
 		if params.wilga == 1 then
 		result.models[#result.models+1] = {id = "asset/wilga/wilga2.mdl", transf = transf.rotZYXTransl(transf.degToRad(0, -6, 0) , vec3.new( 0, 0, -0.10 )), }
 		end
-		
+
 		if params.wilga == 2 then
 		result.models[#result.models+1] = {id = "asset/wilga/wilga3.mdl", transf = transf.rotZYXTransl(transf.degToRad(0, -6, 0) , vec3.new( 0, 0, -0.10 )), }
 		end
-		
+
 		if params.wilga == 3 then
 		result.models[#result.models+1] = {id = "asset/wilga/wilga4.mdl", transf = transf.rotZYXTransl(transf.degToRad(0, -6, 0) , vec3.new( 0, 0, -0.10 )), }
 		end
-		
+
 		if params.wilga == 4 then
 		result.models[#result.models+1] = {id = "asset/wilga/wilga5.mdl", transf = transf.rotZYXTransl(transf.degToRad(0, -6, 0) , vec3.new( 0, 0, -0.10 )), }
 		end
-		
+
 		if params.wilga == 5 then
 		result.models[#result.models+1] = {id = "asset/wilga/wilga6.mdl", transf = transf.rotZYXTransl(transf.degToRad(0, -6, 0) , vec3.new( 0, 0, -0.10 )), }
 		end
-		
-		
+
+
 		result.terrainAlignmentLists = { {
 			type = "EQUAL",
 			faces =  { }
