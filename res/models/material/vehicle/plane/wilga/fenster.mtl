@@ -8,12 +8,10 @@ return {
 		},
 		map_albedo_opacity = {
 			fileName = "models/vehicle/plane/wilga/fenster_albedo_opacity.dds",
-			scaleDownAllowed = false,
 			type = "TWOD",
 		},
 		map_metal_gloss_ao = {
 			fileName = "models/vehicle/plane/wilga/fenster_metal_gloss_ao.dds",
-			scaleDownAllowed = false,
 			type = "TWOD",
 		},
 		polygon_offset = {
