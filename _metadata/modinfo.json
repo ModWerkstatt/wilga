@@ -1,12 +1,12 @@
 {
     "name": "PZL-104 Wilga",
-    "summary": "SUMMARY",
-    "description": "The PZL-104 Wilga (Pirol) is a Polish single-engine multi-purpose aircraft used as an agricultural, ambulance, travelling, towing and training aircraft. The mod includes the type known as the Wilga 34, which was the most frequently built version. Just under 1,000 aircraft were produced between 1967 and 2008. Its pilots liked to refer to the aircraft as an aerodynamic crumble cake, which compensated for all its shortcomings with sheer engine power.",
+    "summary": "A small very useful multi-purpose aircraft from Poland.",
+    "description": "The PZL-104 Wilga (Pirol) is a polish single-engine multi-purpose aircraft used as an agricultural, ambulance, travelling, towing and training aircraft. The mod includes the type known as the Wilga 34, which was the most frequently built version. Just under 1,000 aircraft were produced between 1967 and 2008. Its pilots liked to refer to the aircraft as an aerodynamic crumble cake, which compensated for all its shortcomings with sheer engine power.",
     "localization" : {
         "de": {
             "name": "PZL-104 Wilga",
-            "summary": "SUMMARY",
-            "description": "The PZL-104 Wilga (Pirol) is a Polish single-engine multi-purpose aircraft used as an agricultural, ambulance, travelling, towing and training aircraft. The mod includes the type known as the Wilga 34, which was the most frequently built version. Just under 1,000 aircraft were produced between 1967 and 2008. Its pilots liked to refer to the aircraft as an aerodynamic crumble cake, which compensated for all its shortcomings with sheer engine power."
+            "summary": "Ein kleines, aber sehr vielseitig einsetzbares Flugzeug aus Polen.",
+            "description": "Die PZL-104 Wilga (Pirol) ist ein einmotoriges polnisches Mehrzweckflugzeug, das unter anderem als Agrar-, Sanitäts-, Reise-, Schlepp- und Schulflugzeug genutzt wird. Im Mod enthalten ist der als Wilga 34 bezeichnete Typ, der die meistgebaute Version war. Zwischen 1967 bis 2008 wurden knapp 1.000 Flugzeuge hergestellt. Von seinen Piloten wurde das Flugzeug gerne als aerodynamischer Streuselkuchen bezeichnet, der alle dahingehenden Unzulänglichkeiten mit schierer Motorleistung kompensierte."
         }
     },
     "authors": [
