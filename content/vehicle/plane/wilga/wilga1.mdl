@@ -1,33 +1,33 @@
 function data()
-return {
-		boundingInfo = {
+return { 
+		boundingInfo = { 
 			bbMax = { 2.1, 5.62872, 3.77084, },
 			bbMin = { -5.77514, -5.62872, -0.0302756, },
 		},
-		collider = {
-			params = {
+		collider = { 
+			params = { 
 				halfExtents = { 4.87906, 5.62872, 1.90056, },
 			},
 			transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 			type = "BOX",
 		},
 		lods = {
-			{
-				node = {
+			{ 
+				node = { 
 					children = {
-						{
+						{ 
 							materials = { "mat/fenster.mtl", },
 							mesh = "msh/wilga_fenster_lod0.msh",
 							name = "wilga_fenster",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 						},
-						{
-							animations = {
-								elevator = {
-									params = {
+						{ 
+							animations = { 
+								elevator = { 
+									forward = false,
+									params = { 
 										id = "ani/elevator.ani",
 									},
-                                    forward = false,
 									type = "FILE_REF",
 								},
 							},
@@ -36,13 +36,13 @@ return {
 							name = "wilga_hohe",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.18382, 0, 1.57954, 1, },
 						},
-						{
-							animations = {
-								aileron_left = {
-									params = {
+						{ 
+							animations = { 
+								aileron_left = { 
+									forward = false,
+									params = { 
 										id = "::/vehicle/shared/ani/aileron_left.ani",
 									},
-                                    forward = false,
 									type = "FILE_REF",
 								},
 							},
@@ -51,13 +51,13 @@ return {
 							name = "wilga_quer_links",
 							transf = { 0, -1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, -0.549573, 4.26354, 2.55755, 1, },
 						},
-						{
-							animations = {
-								aileron_right = {
-									params = {
+						{ 
+							animations = { 
+								aileron_right = { 
+									forward = false,
+									params = { 
 										id = "::/vehicle/shared/ani/aileron_right.ani",
 									},
-                                    forward = false,
 									type = "FILE_REF",
 								},
 							},
@@ -66,13 +66,13 @@ return {
 							name = "wilga_quer_rechts",
 							transf = { 0, -1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, -0.54957, -4.26354, 2.55755, 1, },
 						},
-						{
-							animations = {
-								rudder = {
-									params = {
+						{ 
+							animations = { 
+								rudder = { 
+									forward = false,
+									params = { 
 										id = "::/vehicle/shared/ani/rudder.ani",
 									},
-                                    forward = false,
 									type = "FILE_REF",
 								},
 							},
@@ -81,10 +81,10 @@ return {
 							name = "wilga_seite",
 							transf = { 0.949972, 0, 0.312335, 0, 0, 1, 0, 0, -0.312335, 0, 0.949972, 0, -4.97806, 0, 2.41246, 1, },
 						},
-						{
-							animations = {
-								flaps = {
-									params = {
+						{ 
+							animations = { 
+								flaps = { 
+									params = { 
 										id = "ani/flaps.ani",
 									},
 									type = "FILE_REF",
@@ -95,22 +95,22 @@ return {
 							name = "wilga_klappen",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.552614, 0, 2.5499, 1, },
 						},
-						{
+						{ 
 							materials = { "mat/rumpf1.mtl", },
 							mesh = "msh/wilga_innen_lod0.msh",
 							name = "wilga_innen",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 						},
-						{
-							animations = {
-								props_off = {
-									params = {
+						{ 
+							animations = { 
+								props_off = { 
+									params = { 
 										id = "::/vehicle/shared/ani/props_off.ani",
 									},
 									type = "FILE_REF",
 								},
-								props_on = {
-									params = {
+								props_on = { 
+									params = { 
 										id = "::/vehicle/shared/ani/props_on.ani",
 									},
 									type = "FILE_REF",
@@ -121,16 +121,16 @@ return {
 							name = "wilga_prop",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.04011, 0, 1.55344, 1, },
 						},
-						{
-							animations = {
-								props_blurred_off = {
-									params = {
+						{ 
+							animations = { 
+								props_blurred_off = { 
+									params = { 
 										id = "::/vehicle/shared/ani/props_blurred_off.ani",
 									},
 									type = "FILE_REF",
 								},
-								props_blurred_on = {
-									params = {
+								props_blurred_on = { 
+									params = { 
 										id = "::/vehicle/shared/ani/props_blurred_on.ani",
 									},
 									type = "FILE_REF",
@@ -141,43 +141,43 @@ return {
 							name = "wilga_prop",
 							transf = { 1, 0, 0, 0, 0, 0, 1, 0, 0, -1, 0, 0, 2.04011, 0, 1.55344, 1, },
 						},
-						{
+						{ 
 							materials = { "mat/rumpf1.mtl", },
 							mesh = "msh/wilga_rad_lod0.msh",
 							name = "wilga_rad_links",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.01286, 1.3918, 0.213641, 1, },
 						},
-						{
+						{ 
 							materials = { "mat/rumpf1.mtl", },
 							mesh = "msh/wilga_rad_lod0.msh",
 							name = "wilga_rad_rechts",
 							transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 1.01286, -1.3918, 0.213641, 1, },
 						},
-						{
+						{ 
 							materials = { "mat/rumpf1.mtl", },
 							mesh = "msh/wilga_rumpf_lod0.msh",
 							name = "wilga_rumpf",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 						},
-						{
+						{ 
 							materials = { "mat/rumpf1.mtl", },
 							mesh = "msh/wilga_sporn_lod0.msh",
 							name = "wilga_sporn",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.57745, 0, 0.870801, 1, },
 						},
-						{
+						{ 
 							materials = { "::/vehicle/plane/emissive/plane_all_lights.mtl", },
 							mesh = "msh/wilga_flash_lod0.msh",
 							name = "wilga_flash",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 						},
-						{
+						{ 
 							materials = { "::/vehicle/plane/emissive/plane_all_lights.mtl", },
 							mesh = "msh/wilga_nav_lod0.msh",
 							name = "wilga_nav",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 						},
-						{
+						{ 
 							materials = { "::/vehicle/plane/emissive/plane_all_lights.mtl", },
 							mesh = "msh/wilga_strobe_lod0.msh",
 							name = "wilga_strobe",
@@ -190,22 +190,22 @@ return {
 				visibleFrom = 0,
 				visibleTo = 150,
 			},
-			{
-				node = {
+			{ 
+				node = { 
 					children = {
-						{
+						{ 
 							materials = { "mat/fenster.mtl", },
 							mesh = "msh/wilga_fenster_lod0.msh",
 							name = "wilga_fenster",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 						},
-						{
-							animations = {
-								elevator = {
-									params = {
+						{ 
+							animations = { 
+								elevator = { 
+									forward = false,
+									params = { 
 										id = "ani/elevator.ani",
 									},
-                                    forward = false,
 									type = "FILE_REF",
 								},
 							},
@@ -214,55 +214,55 @@ return {
 							name = "wilga_hohe",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -5.18382, 0, 1.57954, 1, },
 						},
-						{
-							animations = {
-								aileron_left = {
-									params = {
+						{ 
+							animations = { 
+								aileron_left = { 
+									forward = false,
+									params = { 
 										id = "::/vehicle/shared/ani/aileron_left.ani",
 									},
-                                    forward = false,
 									type = "FILE_REF",
 								},
 							},
 							materials = { "mat/rumpf1.mtl", },
 							mesh = "msh/wilga_quer_links_lod1.msh",
 							name = "wilga_quer_links",
-							transf = { 0, -1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, -0.549573, 4.26354, 2.55755, 1, },
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.549573, 4.26354, 2.55755, 1, },
 						},
-						{
-							animations = {
-								aileron_right = {
-									params = {
+						{ 
+							animations = { 
+								aileron_right = { 
+									forward = false,
+									params = { 
 										id = "::/vehicle/shared/ani/aileron_right.ani",
 									},
-                                    forward = false,
 									type = "FILE_REF",
 								},
 							},
 							materials = { "mat/rumpf1.mtl", },
 							mesh = "msh/wilga_quer_rechts_lod1.msh",
 							name = "wilga_quer_rechts",
-							transf = { 0, -1, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, -0.54957, -4.26354, 2.55755, 1, },
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.54957, -4.26354, 2.55755, 1, },
 						},
-						{
-							animations = {
-								rudder = {
-									params = {
+						{ 
+							animations = { 
+								rudder = { 
+									forward = false,
+									params = { 
 										id = "::/vehicle/shared/ani/rudder.ani",
 									},
-                                    forward = false,
 									type = "FILE_REF",
 								},
 							},
 							materials = { "mat/rumpf1.mtl", },
 							mesh = "msh/wilga_seite_lod1.msh",
 							name = "wilga_seite",
-							transf = { 0.949972, 0, 0.312335, 0, 0, 1, 0, 0, -0.312335, 0, 0.949972, 0, -4.97806, 0, 2.41246, 1, },
+							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -4.97806, 0, 2.41246, 1, },
 						},
-						{
-							animations = {
-								flaps = {
-									params = {
+						{ 
+							animations = { 
+								flaps = { 
+									params = { 
 										id = "ani/flaps.ani",
 									},
 									type = "FILE_REF",
@@ -273,16 +273,16 @@ return {
 							name = "wilga_klappen",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.552614, 0, 2.5499, 1, },
 						},
-						{
-							animations = {
-								props_off = {
-									params = {
+						{ 
+							animations = { 
+								props_off = { 
+									params = { 
 										id = "::/vehicle/shared/ani/props_off.ani",
 									},
 									type = "FILE_REF",
 								},
-								props_on = {
-									params = {
+								props_on = { 
+									params = { 
 										id = "::/vehicle/shared/ani/props_on.ani",
 									},
 									type = "FILE_REF",
@@ -293,16 +293,16 @@ return {
 							name = "wilga_prop",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 2.04011, 0, 1.55344, 1, },
 						},
-						{
-							animations = {
-								props_blurred_off = {
-									params = {
+						{ 
+							animations = { 
+								props_blurred_off = { 
+									params = { 
 										id = "::/vehicle/shared/ani/props_blurred_off.ani",
 									},
 									type = "FILE_REF",
 								},
-								props_blurred_on = {
-									params = {
+								props_blurred_on = { 
+									params = { 
 										id = "::/vehicle/shared/ani/props_blurred_on.ani",
 									},
 									type = "FILE_REF",
@@ -313,25 +313,25 @@ return {
 							name = "wilga_prop",
 							transf = { 1, 0, 0, 0, 0, 0, 1, 0, 0, -1, 0, 0, 2.04011, 0, 1.55344, 1, },
 						},
-						{
+						{ 
 							materials = { "mat/rumpf1.mtl", },
 							mesh = "msh/wilga_rad_lod1.msh",
 							name = "wilga_rad_links",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.01286, 1.3918, 0.213641, 1, },
 						},
-						{
+						{ 
 							materials = { "mat/rumpf1.mtl", },
 							mesh = "msh/wilga_rad_lod1.msh",
 							name = "wilga_rad_rechts",
 							transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 1.01286, -1.3918, 0.213641, 1, },
 						},
-						{
+						{ 
 							materials = { "mat/rumpf1.mtl", },
 							mesh = "msh/wilga_rumpf_lod1.msh",
 							name = "wilga_rumpf",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 						},
-						{
+						{ 
 							materials = { "mat/rumpf1.mtl", },
 							mesh = "msh/wilga_sporn_lod1.msh",
 							name = "wilga_sporn",
@@ -344,28 +344,28 @@ return {
 				visibleFrom = 150,
 				visibleTo = 500,
 			},
-			{
-				node = {
+			{ 
+				node = { 
 					children = {
-						{
+						{ 
 							materials = { "mat/rumpf1.mtl", },
 							mesh = "msh/wilga_rumpf_lod2.msh",
 							name = "wilga_rumpf",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, },
 						},
-						{
+						{ 
 							materials = { "mat/rumpf1.mtl", },
 							mesh = "msh/wilga_rad_lod2.msh",
 							name = "wilga_rad_links",
 							transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 1.01286, 1.3918, 0.213641, 1, },
 						},
-						{
+						{ 
 							materials = { "mat/rumpf1.mtl", },
 							mesh = "msh/wilga_rad_lod2.msh",
 							name = "wilga_rad_rechts",
 							transf = { -1, 0, 0, 0, 0, -1, 0, 0, 0, 0, 1, 0, 1.01286, -1.3918, 0.213641, 1, },
 						},
-						{
+						{ 
 							materials = { "mat/rumpf1.mtl", },
 							mesh = "msh/wilga_sporn_lod2.msh",
 							name = "wilga_sporn",
@@ -379,115 +379,115 @@ return {
 				visibleTo = 1000,
 			},
 		},
-		metadata = {
-			airVehicle = {
+		metadata = { 
+			airVehicle = { 
 				axles = {
-                    {
-                        position = { 1.0129, 0.2136, },
-                        radius = 0.244,
-                    },
-                    {
-                        position = { 1.0129, 0.2136, },
-                        radius = 0.244,
-                    },
-                },
-				wheels = {
-                    {
-                        position = { -5.57745, 0.870801, },
-                        radius = 0.1425,
-                    }
-                },
-				config = {
+					{ 
+						position = { 1.0129, 0.2136, },
+						radius = 0.244,
+					},
+					{ 
+						position = { 1.0129, 0.2136, },
+						radius = 0.244,
+					},
+				},
+				config = { 
 					axleRadii = { 0.244, 0.244, },
 					axles = { "wilga_rad_links", "wilga_rad_rechts", },
 					fakeBogies = { },
-					steeringParts = { "wilga_seite" },
+					steeringParts = { "wilga_seite", },
 					wheelRadii = { 0.1425, },
 					wheels = { "wilga_sporn", },
 				},
+				hasFlaps = true,
 				idleThrust = 7,
 				maxThrust = 2500,
 				timeToFullThrust = 2,
 				topSpeed = 52.7778,
 				weightEmpty = 725,
 				weightMaxPayload = 405,
+				wheels = {
+					{ 
+						position = { -5.57745, 0.870801, },
+						radius = 0.1425,
+					},
+				},
 				wingArea = 15.5,
-                hasFlaps = true,
 			},
-			availability = {
+			availability = { 
 				yearFrom = 1967,
 				yearTo = 0,
 			},
-			cost = {
+			cost = { 
 				price = -1,
 			},
-			description = {
+			description = { 
 				description = _("wilga_desc"),
 				name = _("wilga_1_name"),
 			},
-			emissions = {
-				noise = {
+			emissions = { 
+				noise = { 
 					idle = -1,
 					power = -1,
 					speed = -1,
 				},
-				pollution = {
+				pollution = { 
 					idle = -1,
 					power = -1,
 					speed = -1,
 				},
 			},
-			maintenance = {
+			maintenance = { 
 				lifespan = 14610,
 				runningCosts = -1,
 			},
-			seatProvider = {
+			seatProvider = { 
 				crewModels = { "::/characters/era_c_man_02/era_c_man_02.mdl", },
 				drivingLicense = "AIR",
 				seats = {
-					{
+					{ 
 						animation = "driving",
 						crew = true,
 						group = "wilga_fenster",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.015, 0.285, 1.05, 1, },
 					},
-					{
+					{ 
 						animation = "driving",
 						group = "wilga_fenster",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0.015, -0.285, 1.05, 1, },
 					},
-					{
+					{ 
 						animation = "driving",
 						group = "wilga_fenster",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.823, 0.285, 1.05, 1, },
 					},
-					{
+					{ 
 						animation = "driving",
 						group = "wilga_fenster",
 						transf = { 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -0.823, -0.285, 1.05, 1, },
 					},
 				},
 			},
-			soundConfig = {
-				soundSet = {
+			soundConfig = { 
+				soundSet = { 
 					name = "::/vehicle/plane/shared/sound/aircraft_prop_modern.snd",
 				},
 			},
-			transformatorConfig = {
+			transformatorConfig = { 
 				skipFromLod = 2,
-				transformator = {
+				transformator = { 
 					name = "::/vehicle/shared/default_air.trf",
 				},
 			},
-			transportVehicle = {
+			transportVehicle = { 
 				carrier = "AIR",
 				compartments = {
-					{
+					{ 
 						loadConfigs = {
-							{
-								cargoEntry = {
+							{ 
+								cargoEntry = { 
 									capacity = 12,
-									cargoTypeSet = {
+									cargoTypeSet = { 
 										cargoClassesExcluded = { },
 										cargoClassesIncluded = { "PASSENGERS", },
 										cargoTypesExcluded = { },
