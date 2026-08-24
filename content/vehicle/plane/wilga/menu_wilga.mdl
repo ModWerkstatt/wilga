@@ -27,54 +27,56 @@ return {
 			},
 			static = false,
 			visibleFrom = 0,
-			visibleTo = 1000,
+			visibleTo = 500,
 		},
 	},
 	metadata = {
 		availability = {
-			yearFrom = 1967,
-			yearTo = 0,
+			yearFrom = 1,
+			yearTo = 1,
 		},
 		cost = {
-			price = -1,
+			price = 0,
 		},
 		description = {
 			name = _("menu_wilga"),
 		},
 		emissions = {
 			noise = {
-				score = 45,
+				score = 40,
 			},
 			pollution = {
-				score = 30,
+				score = 25,
 			},
 		},
 		landVehicle = {
 			brakeDeceleration = 2.5,
 			engines = {
 				{
-					power = 2800,
-					tractiveEffort = 235,
+					power = 6400,
+					tractiveEffort = 320,
 					type = "ELECTRIC",
 				},
 			},
 			friction = 0.0199999995529651641845703125,
-			topSpeed = 27.777777,
-			weight = 111.6999969482421875,
+			topSpeed = 55.5556,
+			weight = 90,
 		},
 		maintenance = {
 			lifespan = 21915,
 			runningCosts = -1,
 		},
-		airVehicle = {
+		railVehicle = {
 			config = {
 			},
 		},
-		transformator = {
-			name = "::/vehicle/shared/default_air.trf",
+		transformatorConfig = {
+			skipFromLods = 1,
+			transformator = { name = "::/vehicle/train/shared/default_train.trf",
+			},
 		},
 		transportVehicle = {
-			carrier = "AIR",
+			carrier = "ROAD",
 			engineTransportModes = { },
 			transportModes = { },
 			filterTags = { },
