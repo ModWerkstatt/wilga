@@ -6,8 +6,9 @@ return {
 			alpha_test = { 
 				fragmentProperties = {
 					{ 
-						cutout = true,
-						sorted = false,
+						cutout = false,
+						disableDepthAndNormalWrite = true,
+						sorted = true,
 					},
 				},
 			},
