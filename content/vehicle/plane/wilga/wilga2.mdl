@@ -432,14 +432,14 @@ return {
 			},
 			availability = { 
 				yearFrom = 1967,
-				yearTo = 0,
+				yearTo = 1990,
 			},
 			cost = { 
 				price = -1,
 			},
 			description = { 
 				description = _("wilga_desc"),
-				name = _("wilga_1_name"),
+				name = _("wilga_2_name"),
 			},
 			emissions = { 
 				noise = { 

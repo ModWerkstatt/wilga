@@ -439,7 +439,7 @@ return {
 			},
 			description = { 
 				description = _("wilga_desc"),
-				name = _("wilga_1_name"),
+				name = _("wilga_4_name"),
 			},
 			emissions = { 
 				noise = { 
